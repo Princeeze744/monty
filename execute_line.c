@@ -27,10 +27,10 @@ int execute_line(int fd, unsigned int line_num)
 	{
 		line_num++;
 		free(buff);
-		return (execute(fd, line_num));
+		return (execute_line(fd, line_num));
 	}
 
-	func = get_op_func(inven->code);
+	func = get_func(inven->code);
 	if (!func)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n",
@@ -43,5 +43,5 @@ int execute_line(int fd, unsigned int line_num)
 	func(&inven->stack, line_num++);
 
 	free(buff);
-	return (execute(fd, line_num++));
+	return (execute_line(fd, line_num++));
 }

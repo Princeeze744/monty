@@ -70,12 +70,12 @@ void nop(stack_t **, unsigned int);
 
 /* Utility functions */
 char *readln(int);
-void (*get_op_func(char *))(stack_t **, unsigned int);
+void (*get_func(char *))(stack_t **, unsigned int);
 int make_inventory(void);
 int parseln(char *);
 int execute_line(int, unsigned int);
 int to_int(char *);
-void free_all();
+void all_free();
 void free_stack(void);
 void free_inventory(void);
 void op_error_exit(void);

@@ -30,12 +30,12 @@ int main(int argc, const char *argv[])
 		return (EXIT_FAILURE);
 
 	lcount = 1;
-	if (execute(fd, lcount) == EXIT_FAILURE)
+	if (execute_line(fd, lcount) == EXIT_FAILURE)
 	{
-		free_all();
+		all_free();
 		return (EXIT_FAILURE);
 	}
 
-	free_all();
+	all_free();
 	return (EXIT_SUCCESS);
 }
