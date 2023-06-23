@@ -8,7 +8,7 @@ int make_inventory(void)
 {
 
 	inven = malloc(sizeof(inventory_t));
-	if (!inventory)
+	if (!inven)
 	{
 		fprintf(stderr, "Inventory build error message");
 		return (EXIT_FAILURE);

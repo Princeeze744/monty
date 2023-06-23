@@ -10,7 +10,7 @@ int main(int argc, const char *argv[])
 {
 	unsigned int lcount;
 	int fd;
-	char *monty_file;
+	const char *monty_file;
 
 	monty_file = argv[1];
 	if (argc == 1 || argc > 2)

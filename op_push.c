@@ -26,10 +26,10 @@ void push(stack_t **hd, unsigned int line_num)
 	}
 
 	new->prev = NULL;
-	new->next = *head;
+	new->next = *hd;
 	new->n = n;
 
-	if (!(*head))
+	if (!(*hd))
 		inven->tail = new;
-	*head = new;
+	*hd = new;
 }

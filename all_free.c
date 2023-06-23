@@ -17,7 +17,7 @@ void free_stack(void)
 	stack_t **curr, *temp;
 
 	curr = &inven->stack;
-	while (*current)
+	while (*curr)
 	{
 		temp = *curr;
 		*curr = (*curr)->next;
@@ -30,5 +30,5 @@ void free_stack(void)
  */
 void free_inventory(void)
 {
-	free(inventory);
+	free(inven);
 }
