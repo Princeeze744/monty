@@ -73,7 +73,7 @@ char *readln(int);
 void (*get_op_func(char *))(stack_t **, unsigned int);
 int make_inventory(void);
 int parseln(char *);
-int execute(int, unsigned int);
+int execute_line(int, unsigned int);
 int to_int(char *);
 void free_all();
 void free_stack(void);

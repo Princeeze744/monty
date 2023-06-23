@@ -10,17 +10,19 @@ int main(int argc, const char *argv[])
 {
 	unsigned int lcount;
 	int fd;
+	char *monty_file;
 
+	monty_file = argv[1];
 	if (argc == 1 || argc > 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
 		return (EXIT_FAILURE);
 	}
 
-	fd = open(argv[1], O_RDONLY);
+	fd = open(monty_file, O_RDONLY);
 	if (fd < 0)
 	{
-		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
+		fprintf(stderr, "Error: Can't open file %s\n", monty_file);
 		return (EXIT_FAILURE);
 	}
 
