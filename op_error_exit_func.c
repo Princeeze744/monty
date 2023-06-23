@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * op_error_exit - exits program on op error
+ * op_error_exit_func - exits program on op error
  */
 void op_error_exit_func(void)
 {
