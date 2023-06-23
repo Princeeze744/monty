@@ -68,7 +68,7 @@ void swap(stack_t **, unsigned int);
 void add(stack_t **, unsigned int);
 void nop(stack_t **, unsigned int);
 
-/* Utility functions */
+/* Utils functions */
 char *readln(int);
 void (*get_func(char *))(stack_t **, unsigned int);
 int make_inventory(void);
